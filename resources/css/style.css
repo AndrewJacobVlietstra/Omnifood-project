@@ -15,16 +15,55 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+/*------COMMONLY USED CLEARFIX IN WEB DESIGN, TO CLEAR FLOATS----*/
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+
 
 /* -------- HEADINGS ---------------*/
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
 h1 {
     margin: 0px 0px 20px 0px;
     color: #fff;
     font-size: 240%;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #3498db;
+    content: " ";
+    width: 150px;
+    margin: 25px auto 0 auto;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 
@@ -32,7 +71,41 @@ h1 {
 .row {
     max-width: 1140px;
     margin: 0 auto 0 auto;
+}
 
+section {
+    padding: 80px 0px 80px 0px;
+}
+
+.box {
+    padding: 1%;
+}
+
+
+/* -------- PARAGRAPHS ---------------*/
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+    text-align: center;
+}
+
+
+
+/* -------- ICONS ---------------*/
+
+.icon-big {
+    font-size: 300%;
+    display: block;
+    color: #3498db;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 
@@ -48,7 +121,7 @@ h1 {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
-    transition: background-color 0.15s, border 0.15s, color 0.15s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
 .btn-full:link,
@@ -68,7 +141,7 @@ h1 {
 .btn-full:hover,
 .btn-full:active {
     background-color: #1f74ac00;
-    color: #3498db;
+    color:  #3498db;
     
 }
 
@@ -77,6 +150,7 @@ h1 {
     color: #fff;
     border: thin solid #3498db;
     background-color: #3498db;
+
 }
 
 
@@ -107,6 +181,7 @@ header {
     margin-top: 20px;
 }
 
+
 .main-nav {
     float: right;
     list-style: none;
@@ -128,6 +203,7 @@ header {
     font-size: 90%;
     padding: 0px 0px 8px 0px;
     border-bottom: 2px solid transparent;
+    border-radius: 7px;
     transition: border-bottom 0.2s, margin 0.2s;
 }
 
@@ -135,4 +211,119 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #3498db;
     margin: 6px;
+}
+
+/*--------------FEATURES-----------------*/
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+/*-------------- MEALS --------------------*/
+
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li{
+    display: block;
+    float: right;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    transform: scale(1.20);
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+
+
+/*-------------- HOW IT WORKS SECTION --------------------*/
+
+.section-steps {
+    background-color: #f4f4f4;
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+
+}
+
+.works-steps:last-of-type {
+    margin-bottom: 80px;
+}
+
+.app-screen {
+    width: 50%;
+    transition: transform 1s;
+}
+
+.app-screen:hover {
+    transform: rotate(5deg);
+}
+
+.works-steps {
+    margin-bottom: 50px;
+}
+
+
+
+.works-steps div {
+    color: #3498db;
+    border: 2px solid #3498db;
+    /*display: inline-block;*/
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+
+}
+
+.btn-app img {
+    height: 54px;
+    width: auto;
+    margin-right: 10px;
+    transition: transform 0.2s, border-radius 0.2s;
+}
+
+.btn-app img:hover {
+    transform: scale(1.055);
+    border-radius: 20px;
 }
