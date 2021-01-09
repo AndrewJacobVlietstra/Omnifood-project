@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -129,6 +130,7 @@ input[type="submit"] {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
+    -webkit-transition: background-color 0.22s, border 0.22s, color 0.22s;
     transition: background-color 0.22s, border 0.22s, color 0.22s;
 }
 
@@ -169,6 +171,7 @@ input[type="submit"]:active {
 
 /* -------- HEADER ---------------*/
 header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("images/hero.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/hero.jpg");
     background-size: cover;
     background-position: center;
@@ -184,6 +187,7 @@ header {
     /* Keeps this box centered */
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -218,6 +222,7 @@ header {
     padding: 0px 0px 8px 0px;
     border-bottom: 2px solid transparent;
     border-radius: 7px;
+    -webkit-transition: border-bottom 0.2s, margin-right 0.2s;
     transition: border-bottom 0.2s, margin-right 0.2s;
     
 }
@@ -267,12 +272,17 @@ header {
     width: 100%;
     height: auto;
     opacity: 0.5;
+    -webkit-transform: scale(1.20);
     transform: scale(1.20);
+    -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
+    transition: opacity 0.4s, -webkit-transform 0.4s;
     transition: transform 0.4s, opacity 0.4s;
+    transition: transform 0.4s, opacity 0.4s, -webkit-transform 0.4s;
 }
 
 .meal-photo img:hover {
     opacity: 1;
+    -webkit-transform: scale(1.03);
     transform: scale(1.03);
 }
 
@@ -303,10 +313,14 @@ header {
 
 .app-screen {
     width: 50%;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
     transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
 }
 
 .app-screen:hover {
+    -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
 }
 
@@ -335,10 +349,14 @@ header {
     height: 54px;
     width: auto;
     margin-right: 10px;
+    -webkit-transition: border-radius 0.2s, -webkit-transform 0.2s;
+    transition: border-radius 0.2s, -webkit-transform 0.2s;
     transition: transform 0.2s, border-radius 0.2s;
+    transition: transform 0.2s, border-radius 0.2s, -webkit-transform 0.2s;
 }
 
 .btn-app img:hover {
+    -webkit-transform: scale(1.055);
     transform: scale(1.055);
     border-radius: 20px;
 }
@@ -361,6 +379,7 @@ header {
     height: auto;
     width: 100%;
     margin: 15px auto 10px auto;
+    -webkit-transition: border-radius 0.3s;
     transition: border-radius 0.3s;
 }
 
@@ -380,6 +399,7 @@ header {
     text-decoration: none;
     padding-bottom: 3px;
     border-bottom: 1px solid transparent;
+    -webkit-transition: color 0.25s, border-bottom 0.25s;
     transition: color 0.25s, border-bottom 0.25s;
     
 }
@@ -410,6 +430,7 @@ header {
 
 .customer-testimonials {
     color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.77)), to(rgba(0, 0, 0, 0.77))), url("images/back-customers.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.77)), url("images/back-customers.jpg");
     background-size: cover;
     background-position: center;
@@ -458,6 +479,7 @@ header {
     background-color: #e8f1ff;
     width: 85%;
     border-radius: 15px;
+    -webkit-box-shadow: 7px 7px 5px #e6e6e6;
     box-shadow: 7px 7px 5px #e6e6e6;
     
 }
@@ -525,6 +547,7 @@ header {
     text-decoration: none;
     border: 2px solid #3498db;
     border-radius: 200px;
+    -webkit-transition: background-color 0.22s, color 0.22s;
     transition: background-color 0.22s, color 0.22s;
 }
 
@@ -616,6 +639,7 @@ footer p {
 .footer-icons a:visited {
     color: #888;
     text-decoration: none;
+    -webkit-transition: color 0.21s;
     transition: color 0.21s;
 }
 
@@ -630,6 +654,7 @@ footer p {
 .ion-social-instagram,
 .ion-social-youtube,
 .ion-social-github {
+    -webkit-transition: color 0.26s;
     transition: color 0.26s;
 }
 
