@@ -85,7 +85,7 @@
         line-height: 200%;
     }
 
-    footer {font-size: 55%;}
+    footer {font-size: 64%;}
     .footer-links li,
     .footer-icons li {
         margin-right: 18px;
@@ -161,23 +161,19 @@
         text-align: center;
     }
 
-    footer {font-size: 70%;}
 
-    .footer-links{
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 10px;
-}
-    .footer-icons{
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
+
+    footer {font-size: 75%;}
+
+    .footer-links-div {
+        margin: 0 auto;
+        padding-left: 20px;
+        margin-bottom: 20px;
     }
-
-    .footer-links li,
-    .footer-icons li {
-        margin-right: 18px;
+    .footer-icons-div {
+        margin: 0 auto;
+        padding-right: 50px;
+        
     }
 
 

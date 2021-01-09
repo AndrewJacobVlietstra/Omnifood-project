@@ -623,18 +623,19 @@ footer p {
 
 .footer-links {
     float: left;
-    font-size: 110%; 
+    font-size: 110%;
 }
 
 .footer-icons {
     float: right; 
-    font-size: 150%; 
+    font-size: 150%;
 }
 
 .footer-links li,
 .footer-icons li {
     display: inline-block;
     margin-right: 22px;
+
 }
 
 .footer-links a:link,
