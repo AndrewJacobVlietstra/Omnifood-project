@@ -1,0 +1,191 @@
+
+
+/* BIG TABLETS to 1200 pixles (widths smaller than the 1140px row */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row {padding: 0 2%;}
+
+
+
+    .steps-box{margin-top: 10px; font-size: 90%;}
+    .steps-box:last-child {margin-top: 80px;}
+    .works-steps {margin-bottom: 40px;}
+    .works-steps:last-of-type {margin-bottom: 30px;}
+    .app-screen {width: 60%;}
+    .btn-app img {
+        height: 54px;
+        width: auto;
+
+    }
+
+    .city-icon{width: 15px;}
+    .city-paragraph {font-size: 90%;}
+
+    .customer-testimonials row {
+        margin: 0 auto;
+    }
+
+    .section-sign-up-first-third {
+        margin: 0 auto;
+        font-size: 90%;
+        width: 98%;
+    }
+
+    footer {font-size: 80%;}
+    .footer-links li,
+    .footer-icons li {
+        margin-right: 22px;
+    }
+}
+
+
+/* (SMALL TABLETS TO BIG TABLETS) IPADS IN PORTRAIT MODE: from 768 to 1023 pixels */
+@media only screen and (max-width: 1023px) {
+    body {font-size: 18px;}
+    section {padding: 60px 0;}
+    .long-copy {
+        line-height: 145%;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .customer-testimonials {
+    width: 100%;
+    font-size: 80%;
+
+}
+    .section-sign-up-first-third {
+        margin: 0 auto;
+        font-size: 80%;
+        width: 98%;
+    }
+
+    .city-icon{width: 5px;}
+    .city-paragraph {font-size: 71%;}
+
+    .steps-box{
+        margin-top: 10px; 
+        font-size: 90%;
+    }
+    .steps-box:last-child {margin-top: 80px;}
+    .works-steps {margin-bottom: 40px;}
+    .works-steps:last-of-type {margin-bottom: 30px;}
+    .app-screen {width: 60%;}
+    .btn-app img {
+        height: 44px;
+        width: auto;
+    }
+
+    .contact-form {
+        width: 80%; 
+        line-height: 200%;
+    }
+
+    footer {font-size: 55%;}
+    .footer-links li,
+    .footer-icons li {
+        margin-right: 18px;
+    }
+}
+
+
+
+
+/* SMALL PHONES TO SMALL TABLETS: 481 to 767 pixels */
+@media only screen and (max-width: 767px) {
+    body {font-size: 16px;}
+    section { padding: 30px 0;}
+
+    .row,
+    .hero-text-box {
+        padding: 0 4%;
+    }
+
+    .col {width: 100%;}
+
+    .main-nav {display: none;}
+
+    h1 {font-size: 180%;}
+    h2 {font-size: 130%;}
+
+    .section-features .box p,
+    .section-features .box h3,
+    .section-features .box i {
+        text-align: left;
+        margin: 5px 0;
+    }
+
+    .works-steps div {
+        height: 40px;
+        width: 40px;
+    }
+
+    .steps-box:first-child {text-align: center;}
+    .steps-box:last-child {font-size: 105%;}
+    .section-steps-btns {text-align: center;}
+
+
+
+    .city-icon{width: 10px;}
+    .city-paragraph {
+        font-size: 100%;
+        text-align: left; 
+    }
+    .section-cities div div p {margin: 0 auto;}
+    .section-cities div div .city-image{
+        height: auto;
+        width: 100%;
+        margin: 15px auto 10px auto;
+    }
+
+
+    
+    .section-sign-up-first-third {
+        margin: 10 auto;
+        font-size: 130%;
+        width: 80%;
+    }
+    .section-sign-up-third-third {
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        width: 90%; 
+        line-height: 240%;
+    }
+    .form-btn {
+        text-align: center;
+    }
+
+    footer {font-size: 70%;}
+
+    .footer-links{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+    .footer-icons{
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .footer-links li,
+    .footer-icons li {
+        margin-right: 18px;
+    }
+
+}
+
+
+/* SMALL PHONES: from 0 to 480 pixels */
+@media only screen and (max-width: 480px) {
+
+    section {padding: 25px 0;}
+
+}
