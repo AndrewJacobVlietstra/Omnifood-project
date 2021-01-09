@@ -119,14 +119,16 @@ section {
 /* -------- BUTTONS SECTION (FIRST SECTION) ---------------*/
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type="submit"] {
     display: inline-block;
+    background-color: #fff;
     color: #fff;
     padding: 10px 30px;
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.22s, border 0.22s, color 0.22s;
 }
 
 .btn-full:link,
@@ -145,13 +147,17 @@ section {
 }
 
 .btn-ghost:link,
-.btn-ghost:visited {
+.btn-ghost:visited,
+input[type="submit"] {
+    background-color: #1f74ac00;
     border: thin solid #3498db;
     color: #3498db;
 }
 
 .btn-ghost:hover,
-.btn-ghost:active {
+.btn-ghost:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
     color: #fff;
     border: thin solid #3498db;
     background-color: #3498db;
@@ -162,7 +168,7 @@ section {
 
 /* -------- HEADER ---------------*/
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(images/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/hero.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -404,7 +410,7 @@ header {
 
 .customer-testimonials {
     color: #fff;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.77)), url(images/back-customers.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -445,23 +451,27 @@ header {
 /*------SIGN-UP SECTION-------*/
 
 .section-sign-up {
-    background-color: #ebebeb;
+    background-color: #f4f4f4;
 }
 
 .section-sign-up-first-third {
-    background-color: #f4f4f4;
-    margin-right: 40px;
+    background-color: #e8f1ff;
+    width: 85%;
+    border-radius: 15px;
+    box-shadow: 7px 7px 5px #e6e6e6;
     
 }
 
 .section-sign-up-second-third {
     background-color: #fff;
-    border-top: thin solid rgb(206, 206, 206);
+    border-top: thin solid rgb(221, 221, 221);
 }
 
 .section-sign-up-third-third {
-    background-color: #f4f4f4;
-    border-top: thin solid rgb(206, 206, 206);
+    background-color: #e8f1ff;
+    border-top: thin solid rgb(221, 221, 221);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .section-sign-up h4 {
@@ -471,7 +481,7 @@ header {
 
 .sign-up-price {
     display: inline-block;
-    color: rgb(212, 183, 16);
+    color: rgb(224, 191, 0);
     font-size: 300%;
     font-weight: 200;
     padding-left: 10px;
@@ -479,17 +489,16 @@ header {
 }
 .sign-up-month {
     display: inline-block;
-    color: rgb(212, 183, 16);
+    color: rgb(223, 191, 10);
     margin-left: 12px;
     font-size: 100%;
-
 }
+
 .sign-up-per-meal {
     margin-top: 15px;
     font-size: 80%;
     padding-left: 15px;
     padding-bottom: 10px;
-
 }
 
 .sign-up-list {
@@ -516,7 +525,7 @@ header {
     text-decoration: none;
     border: 2px solid #3498db;
     border-radius: 200px;
-    transition: background-color 0.2s, color 0.2s;
+    transition: background-color 0.22s, color 0.22s;
 }
 
 .sign-up-btn:hover,
@@ -529,4 +538,115 @@ header {
 .section-sign-up-third-third p {
     text-align: center;
     padding: 15px;
+}
+
+
+
+/*----------FORM SECTION---------*/
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto 0 auto;
+}
+
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: thin solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="checkbox"] {
+    margin: 10px 5px 10px 0px;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+/*-----------FOOTER----------*/
+
+footer {
+    background-color: rgb(31, 31, 31);
+    position: relative;
+    padding: 50px;
+    
+}
+
+footer ul{
+    width: 100%;
+    list-style: none;
+    float: right;
+    
+    
+    
+    
+}
+
+footer ul li {
+    width: 100%;
+    margin-right: 22px;
+    display: inline;
+}
+
+footer p {
+    color: rgb(156, 156, 156);
+    text-align: center;
+    line-height: 170%;
+    margin: 40px 0px 0px 0px;
+    font-size: 75%;
+    
+}
+
+.footer-links {
+    width: 30%;
+    margin-top: 40px;
+    margin-right: 0px;
+    position: absolute;
+    top: 0%;
+    left: 8%;
+    
+}
+
+.footer-links a:link,
+.footer-links a:visited {
+    color: rgb(156, 156, 156);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-icons {
+    font-size: 110%;
+    width: 20%;
+    margin-top: 40px;
+    margin-right: 0px;
+    position: absolute;
+    top: 0%;
+    right: 8%;
+    
+}
+
+.footer-icons a:link,
+.footer-icons a:visited {
+    color: rgb(156, 156, 156);
+    text-decoration: none;
+    font-size: 110%;
+    transition: color 0.2s;
+}
+
+
+.footer-links a:hover,
+.footer-links a:active,
+.footer-icons a:hover,
+.footer-icons a:active {
+    color: rgb(233, 230, 230);
 }
