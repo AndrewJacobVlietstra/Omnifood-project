@@ -169,7 +169,7 @@ input[type="submit"]:active {
 
 /* -------- HEADER ---------------*/
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/hero.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -410,7 +410,7 @@ header {
 
 .customer-testimonials {
     color: #fff;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.77)), url(images/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.77)), url("images/back-customers.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
