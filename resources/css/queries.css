@@ -138,20 +138,25 @@
     }
     .sticky .main-nav {
         margin-top: 10px;
-        transition: 0.8s;
     }
     .sticky .main-nav li a:link,
     .sticky .main-nav li a:visited {
         padding: 10px 0px;
-        transition: 0.3s;
     }
     .sticky .logo {display: none;}
-    .sticky .logo-black {
-        display: block;
-        transition: 1s;
-    }
+    .sticky .logo-black {display: block;}
     .sticky .mobile-nav-icon {margin-top: 20px;}
     .sticky .mobile-nav-icon i {color: #000;}
+
+    .sticky,
+    .sticky .main-nav,
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited,
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        transition: none;
+    }
+
 
     /* .sticky,
     .sticky .main-nav,
@@ -234,7 +239,7 @@
     section {padding: 25px 0;}
     header {background-attachment: scroll;}
     .customer-testimonials {background-attachment: scroll;}
-    
+
 
     .footer-links li a {font-size: 99%;}
 
