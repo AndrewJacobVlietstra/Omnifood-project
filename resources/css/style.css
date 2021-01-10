@@ -199,6 +199,8 @@ header {
 }
 
 
+
+/* Main Navigation */
 .main-nav {
     float: right;
     list-style: none;
@@ -209,8 +211,6 @@ header {
 .main-nav li {
     display: inline-block;
     margin-left: 40px;
-    
-    
 }
 
 .main-nav li a:link,
@@ -221,16 +221,47 @@ header {
     font-size: 90%;
     padding: 0px 0px 8px 0px;
     border-bottom: 2px solid transparent;
-    border-radius: 7px;
     -webkit-transition: border-bottom 0.2s, margin-right 0.2s;
     transition: border-bottom 0.2s, margin-right 0.2s;
-    
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #2d9ee9;
     margin-right: 6px;
+}
+
+/* Sticky Navigation */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 2px 2px rgb(233, 233, 233);
+    z-index: 9999;
+}
+
+.sticky .main-nav {
+    margin-top: 31px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    color: #555;
+    padding: 30px 0px;
+}
+
+.sticky .logo {display: none;}
+.sticky .logo-black {display: block;}
+
+.logo-black {
+    display: none;
+    height: auto;
+    width: 75px;
+    float: left;
+    margin: 5px 0;
 }
 
 /*--------------FEATURES-----------------*/

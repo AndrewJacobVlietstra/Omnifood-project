@@ -112,6 +112,9 @@
     h1 {font-size: 180%;}
     h2 {font-size: 125%;}
 
+    header {background-attachment: scroll;}
+    .customer-testimonials {background-attachment: scroll;}
+
     .section-features .box p,
     .section-features .box h3,
     .section-features .box i {
@@ -173,7 +176,6 @@
     .footer-icons-div {
         margin: 0 auto;
         padding-right: 50px;
-        
     }
 
 
@@ -184,5 +186,7 @@
 @media only screen and (max-width: 480px) {
 
     section {padding: 25px 0;}
+    header {background-attachment: scroll;}
+    .customer-testimonials {background-attachment: scroll;}
 
 }

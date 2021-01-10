@@ -18,34 +18,35 @@
     <body>
 
         <header>
-            <nav>
+            <nav id="navBar">
                 <div class="row">
                     <img src="resources/images/logo-white.png" alt="Omnifood Logo" class="logo">
+                    <img src="resources/images/logo.png" alt="Omnifood Logo" class="logo-black">
                     <ul class="main-nav">
-                        <li><a href="#">Food Delivery</a></li>
-                        <li><a href="#">How it Works</a></li>
-                        <li><a href="#">Our Cities</a></li>
-                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#js--section-features">Food Delivery</a></li>
+                        <li><a href="#js--section-steps">How it Works</a></li>
+                        <li><a href="#js--section-cities">Our Cities</a></li>
+                        <li><a href="#js--section-sign-up">Sign Up</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Goodbye junk food. <br> Hello super healthy meals.</h1>
-                <a href="#" class="btn btn-full">I’m hungry</a>
-                <a href="#" class="btn btn-ghost">Show me more</a>
+                <a href="#js--section-sign-up" class="btn btn-full">I’m hungry</a>
+                <a href="#js--section-features" class="btn btn-ghost">Show me more</a>
             </div>
         </header>
         
 
-        <section class="section-features">
-            <div class="row">
+        <section id="js--section-features" class="section-features">
+            <div id="stickyNavTriggerPoint" class="row">
                 <h2>Get food fast &mdash; not fast food.</h2>
                 <p class="long-copy">
                     Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
                 </p>
             </div>
 
-            <div class="row">
+            <div id=jsTest class="row">
                 <div class="col span-1-of-4 box">
                     <i class="ion-ios-infinite-outline icon-big"></i>
                     <h3>Up to 365 days/year</h3>
@@ -81,7 +82,7 @@
         </section>
 
 
-        <section class="section-meals">
+        <section id="js--section-meals" class="section-meals">
             <ul class="meals-showcase clearfix">
                 <li><figure class="meal-photo"><img src="resources/images/1.jpg" alt="Korean bibimbap with egg and vegetables"></figure></li>
                 <li><figure class="meal-photo"><img src="resources/images/2.jpg" alt="Simple italian pizza with cherry tomatoes"></figure></li>
@@ -97,7 +98,7 @@
         </section>
 
 
-        <section class="section-steps">
+        <section id="js--section-steps" class="section-steps">
             <div class="row">
                 <h2>How it works &mdash; Simple as 1, 2, 3</h2>
             </div>
@@ -129,7 +130,7 @@
         </section>
 
 
-        <section class="section-cities">
+        <section id="js--section-cities" class="section-cities">
             <h2>WE'RE CURRENTLY IN THESE CITIES</h2>
             <div class="row">
                 <div class="col span-1-of-4">
@@ -200,7 +201,7 @@
         </section>
 
 
-        <section class="section-sign-up">
+        <section id="js--section-sign-up" class="section-sign-up">
             <div class="row"><h2>Start Eating Healthy Today</h2></div>
 
             <div class="row">
@@ -326,7 +327,7 @@
 
         <footer>
             <div class="row">
-                <div class="col span-1-of-2">
+                <div class="col span-1-of-2 footer-links-div">
                     <ul class="footer-links">
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Blog</a></li>
@@ -335,7 +336,7 @@
                         <li><a href="#">Android App</a></li>
                     </ul>
                 </div>
-                <div class="col span-1-of-2">
+                <div class="col span-1-of-2 footer-icons-div">
                     <ul class="footer-icons">
                         <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                         <li><a href="#"><i class="ion-social-twitter"></i></a></li>
@@ -353,9 +354,17 @@
             </div>
         </footer>
 
-    </body>
+    <!--These scripts allow older browsers to be able to use CSS and HTML as if they were modern day browsers-->
     <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+
+    <!--These scripts are JQuery scripts written in Javascript, these can be used to create cool custom animations to a website or anything really-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="resources/js/script.js"></script>
+    </body>
+
+    
 
 </html>
