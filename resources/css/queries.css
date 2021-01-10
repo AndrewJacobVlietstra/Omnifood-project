@@ -201,4 +201,6 @@
     .sticky .main-nav li a:visited,
     .logo-black {display: none;}
 
+    .footer-links li a {font-size: 99%;}
+
 }
