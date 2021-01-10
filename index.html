@@ -4,13 +4,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css"> <!--Go to this link and CTRL+F to find what icons you need!-->
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400&display=swap" rel="stylesheet">
         <title>Omnifood</title>
     </head>
 
@@ -23,22 +24,22 @@
                     <img src="resources/images/logo-white.png" alt="Omnifood Logo" class="logo">
                     <img src="resources/images/logo.png" alt="Omnifood Logo" class="logo-black">
                     <ul class="main-nav">
-                        <li><a href="#js--section-features">Food Delivery</a></li>
-                        <li><a href="#js--section-steps">How it Works</a></li>
-                        <li><a href="#js--section-cities">Our Cities</a></li>
-                        <li><a href="#js--section-sign-up">Sign Up</a></li>
+                        <li><a href="#features">Food Delivery</a></li>
+                        <li><a href="#steps">How it Works</a></li>
+                        <li><a href="#cities">Our Cities</a></li>
+                        <li><a href="#sign-up">Sign Up</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Goodbye junk food. <br> Hello super healthy meals.</h1>
-                <a href="#js--section-meals" class="btn btn-full">I’m hungry</a>
-                <a href="#js--section-features" class="btn btn-ghost">Show me more</a>
+                <a href="#meals" class="btn btn-full">I’m hungry</a>
+                <a href="#features" class="btn btn-ghost">Show me more</a>
             </div>
         </header>
         
 
-        <section id="js--section-features" class="section-features">
+        <section id="features" class="section-features js--section-features">
             <div id="stickyNavTriggerPoint" class="row">
                 <h2>Get food fast &mdash; not fast food.</h2>
                 <p class="long-copy">
@@ -46,7 +47,7 @@
                 </p>
             </div>
 
-            <div id=jsTest class="row">
+            <div class="row wp1">
                 <div class="col span-1-of-4 box">
                     <i class="ion-ios-infinite-outline icon-big"></i>
                     <h3>Up to 365 days/year</h3>
@@ -78,7 +79,7 @@
                         We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
                     </p>
                 </div>
-            </div> <div id="js--section-meals"></div>
+            </div> <div id="meals"></div>
         </section>
 
 
@@ -98,13 +99,13 @@
         </section>
 
 
-        <section id="js--section-steps" class="section-steps">
+        <section id="steps" class="section-steps js--section-steps">
             <div class="row">
                 <h2>How it works &mdash; Simple as 1, 2, 3</h2>
             </div>
             <div class="row">
 
-                <div class="col span-1-of-2 steps-box" >
+                <div class="col span-1-of-2 steps-box wp2" >
                     <img src="resources/images/app-iPhone.png" alt="omnifood app on iphone" class="app-screen">
                 </div>
 
@@ -130,9 +131,9 @@
         </section>
 
 
-        <section id="js--section-cities" class="section-cities">
+        <section id="cities" class="section-cities js--section-cities">
             <h2>WE'RE CURRENTLY IN THESE CITIES</h2>
-            <div class="row">
+            <div class="row wp3">
                 <div class="col span-1-of-4">
                     <img class="city-image" src="resources/images/lisbon-3.jpg" alt="Lisbon">
                     <h4>Lisbon</h4>
@@ -201,10 +202,10 @@
         </section>
 
 
-        <section id="js--section-sign-up" class="section-sign-up">
+        <section id="sign-up" class="section-sign-up js--section-sign-up">
             <div class="row"><h2>Start Eating Healthy Today</h2></div>
 
-            <div class="row">
+            <div class="row wp4">
                 <div class="col span-1-of-3">
                     <div class="section-sign-up-first-third">
                         <h4>Premium</h4>
@@ -359,10 +360,13 @@
     <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+
+    <!--Important to load in Jquery first then any libraries AFTER you want to add!-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
 
-    <!--These scripts are JQuery scripts written in Javascript, these can be used to create cool custom animations to a website or anything really-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--My custom JS script, added some simple animations to some sections-->
     <script src="resources/js/script.js"></script>
     </body>
 

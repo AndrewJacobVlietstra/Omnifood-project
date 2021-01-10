@@ -542,7 +542,7 @@ header {
     display: inline-block;
     color: rgb(224, 191, 0);
     font-size: 300%;
-    font-weight: 300;
+    font-weight: 200;
     padding-left: 10px;
 
 }
@@ -731,4 +731,14 @@ footer p {
 .footerTopLink:active {
     color: #eee;
 
+}
+
+
+/*----------- JQuery ANIMATIONS ----------- */
+.wp1,
+.wp2,
+.wp3,
+.wp4 {
+    opacity: 0;
+    animation-duration: 1.6s;
 }
