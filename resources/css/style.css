@@ -238,28 +238,34 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.96);
-    box-shadow: 0 2px 2px rgb(233, 233, 233);
+    background-color: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 2px 8px rgb(219, 219, 219);
     z-index: 9999;
+    transition: 1s;
 }
 
 .sticky .main-nav {
-    margin-top: 31px;
+    margin-top: 27px;
+    transition: 0.8s;
 }
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
     color: #555;
-    padding: 30px 0px;
+    padding: 23px 0px;
+    transition: 0.3s;
 }
 
 .sticky .logo {display: none;}
-.sticky .logo-black {display: block;}
+.sticky .logo-black {
+    display: block;
+    transition: 1s;
+}
 
 .logo-black {
     display: none;
     height: auto;
-    width: 75px;
+    width: 65px;
     float: left;
     margin: 5px 0;
 }
@@ -711,4 +717,18 @@ footer p {
 }
 .ion-social-github:hover {
     color: #eee;
+}
+
+.footerTopLink:link,
+.footerTopLink:visited {
+    color: #888;
+    text-decoration: none;
+    -webkit-transition: color 0.21s;
+    transition: color 0.21s;
+}
+
+.footerTopLink:hover,
+.footerTopLink:active {
+    color: #eee;
+
 }

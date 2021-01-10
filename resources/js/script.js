@@ -6,7 +6,7 @@ window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navBar");
 var sticky = stickyNavTriggerPoint.offsetTop;
-var offset = -100;
+var offset = -80;
 
 function myFunction() {
     if (window.pageYOffset >= (sticky + offset)) {
@@ -42,7 +42,7 @@ $('a[href*="#"]')
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 1000, function() {
+        }, 1500, function() {
           // Callback after animation
           // Must change focus!
           var $target = $(target);
