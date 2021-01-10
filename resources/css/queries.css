@@ -178,6 +178,11 @@
         padding-right: 50px;
     }
 
+    .sticky,
+    .sticky .main-nav,
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited,
+    .logo-black {display: none;}
 
 }
 
