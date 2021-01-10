@@ -166,7 +166,7 @@
 
 
 
-    footer {font-size: 70%;}
+    footer {font-size: 65%;}
 
     .footer-links-div {
         margin: 0 auto;
@@ -193,5 +193,12 @@
     section {padding: 25px 0;}
     header {background-attachment: scroll;}
     .customer-testimonials {background-attachment: scroll;}
+
+
+    .sticky,
+    .sticky .main-nav,
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited,
+    .logo-black {display: none;}
 
 }
