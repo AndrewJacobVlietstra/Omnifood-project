@@ -231,6 +231,28 @@ header {
     margin-right: 6px;
 }
 
+
+
+
+/* Mobile Navigation */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+
+
+
+
+
+
 /* Sticky Navigation */
 
 .sticky {
@@ -241,12 +263,12 @@ header {
     background-color: rgba(255, 255, 255, 0.94);
     box-shadow: 0 4px 8px rgb(219, 219, 219);
     z-index: 9999;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .sticky .main-nav {
     margin-top: 27px;
-    transition: 0.8s;
+    transition: 0.5s;
 }
 
 .sticky .main-nav li a:link,
@@ -259,7 +281,6 @@ header {
 .sticky .logo {display: none;}
 .sticky .logo-black {
     display: block;
-    transition: 1s;
 }
 
 .logo-black {
@@ -513,11 +534,11 @@ header {
 }
 
 .section-sign-up-first-third {
-    background-color: #e8f1ff;
+    background-color: #e1edff;
     width: 85%;
     border-radius: 15px;
-    -webkit-box-shadow: 7px 7px 5px #e6e6e6;
-    box-shadow: 7px 7px 5px #e6e6e6;
+    -webkit-box-shadow: 7px 7px 7px #c9c9c9;
+    box-shadow: 7px 7px 7px #c9c9c9;
     
 }
 
@@ -541,8 +562,8 @@ header {
 .sign-up-price {
     display: inline-block;
     color: rgb(224, 191, 0);
-    font-size: 300%;
-    font-weight: 200;
+    font-size: 280%;
+    font-weight: 300;
     padding-left: 10px;
 
 }

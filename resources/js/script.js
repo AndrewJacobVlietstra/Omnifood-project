@@ -55,7 +55,7 @@ $(document).ready(function (){
             event.preventDefault();
             $('html, body').animate({
             scrollTop: target.offset().top
-            }, 1250, function() {
+            }, 1300, function() {
             // Callback after animation
             // Must change focus!
             var $target = $(target);
@@ -108,6 +108,26 @@ $(document).ready(function (){
     });
 
 
+
+    /* Mobile Navigation */
+    $('.js--nav-icon').click(function() {
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon i');
+
+        nav.slideToggle(400);
+        if (icon.hasClass('ion-navicon-round')) {
+            icon.removeClass('ion-navicon-round');
+            icon.addClass('ion-close-round');
+            
+        } else {
+            icon.removeClass('ion-close-round');
+            icon.addClass('ion-navicon-round');
+            
+
+        }
+
+
+    })
 
 
 });

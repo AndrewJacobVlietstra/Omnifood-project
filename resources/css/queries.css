@@ -97,6 +97,7 @@
 
 /* SMALL PHONES TO SMALL TABLETS: 481 to 767 pixels */
 @media only screen and (max-width: 767px) {
+
     body {font-size: 16px;}
     section { padding: 30px 0;}
 
@@ -107,13 +108,59 @@
 
     .col {width: 100%;}
 
-    .main-nav {display: none;}
-
     h1 {font-size: 180%;}
     h2 {font-size: 125%;}
 
     header {background-attachment: scroll;}
+
     .customer-testimonials {background-attachment: scroll;}
+
+
+
+
+    .mobile-nav-icon {display: inline-block;}
+
+    .main-nav {
+        float: left;
+        margin-top: 15px;
+        margin-left: 10px;
+        display: none;
+    }
+
+    .main-nav li {display: block;}
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        font-size: 100%;
+        padding: 10px 0;
+    }
+    .sticky .main-nav {
+        margin-top: 10px;
+        transition: 0.8s;
+    }
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 10px 0px;
+        transition: 0.3s;
+    }
+    .sticky .logo {display: none;}
+    .sticky .logo-black {
+        display: block;
+        transition: 1s;
+    }
+    .sticky .mobile-nav-icon {margin-top: 20px;}
+    .sticky .mobile-nav-icon i {color: #000;}
+
+    /* .sticky,
+    .sticky .main-nav,
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited,
+    .logo-black {display: none;} */
+
+
+
 
     .section-features .box p,
     .section-features .box h3,
@@ -178,12 +225,6 @@
         padding-right: 50px;
     }
 
-    .sticky,
-    .sticky .main-nav,
-    .sticky .main-nav li a:link,
-    .sticky .main-nav li a:visited,
-    .logo-black {display: none;}
-
 }
 
 
@@ -193,13 +234,7 @@
     section {padding: 25px 0;}
     header {background-attachment: scroll;}
     .customer-testimonials {background-attachment: scroll;}
-
-
-    .sticky,
-    .sticky .main-nav,
-    .sticky .main-nav li a:link,
-    .sticky .main-nav li a:visited,
-    .logo-black {display: none;}
+    
 
     .footer-links li a {font-size: 99%;}
 
